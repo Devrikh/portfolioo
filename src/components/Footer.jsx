@@ -1,0 +1,54 @@
+export function Footer() {
+  return (
+    <>
+      <div className="w-full px-[80px] flex flex-col justify-center items-center bg-black">
+        <div className="h-[100vh] max-w-[1600px]  w-full flex flex-col justify-between items-center py-[60px]">
+          <div className="socials w-full text-white flex justify-end items-center gap-[26px]">
+            <p className="font-medium text-[16px] text-justify">Linkedin</p>
+            <p className="font-medium text-[16px] text-justify">Twitter</p>
+            <p className="font-medium text-[16px] text-justify">Behance</p>
+          </div>
+          <div className="CTASec w-full flex flex-col justify-center items-start gap-[40px]">
+            <div className="content flex justify-between w-full ">
+              <p className="font-medium text-[48px] leading-[1.2em] tracking-[-0.05em]  bg-gradient-to-r from-white via-white to-neutral-800 bg-clip-text text-transparent">
+                Curious about what we can create together?
+                <br />
+                Let’s bring something extraordinary to life!
+              </p>
+            </div>
+            <div className="CTA flex justify-start items-center gap-[40px]">
+              <div className="btn bg-[#F5F5F5]  flex justify-center items-center gap-10 font-medium text-[16px] px-[36px] py-[20px] leading-[1.2em] tracking-[-0.04em] text-justify">
+                Get in Touch
+              </div>
+              <div className="available flex justify-center items-center gap-[16px]">
+                <div className="pulse flex justify-center items-center">
+                  <div className="relative h-[10px] w-[10px] rounded-[20px] bg-white"></div>
+                  <div className="absolute h-[10px] w-[10px] rounded-[20px] bg-white z-10 animate-[ping_2s_ease-in-out_infinite]"></div>
+                </div>
+                <p className="font-normal text-[16px] leading-[1.6em] text-white">
+                  Available For Work
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="FooteDetials text-white w-full flex justify-between">
+            <div className="info flex justify-start gap-[170px] items-center">
+              <p className="font-normal text-[16px] leading-[1.6em]">
+                +81 (0)90 1234 5678 <br /> hello@yuya.com
+              </p>
+              <p className="font-normal text-[16px] leading-[1.6em]">
+                Designed & Developed <br />
+                by Peter Hodak
+              </p>
+            </div>
+            <p className="font-normal text-[16px] leading-[1.6em]">
+              All rights reserved,
+              <br />
+              YUYA ©2024
+            </p>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
