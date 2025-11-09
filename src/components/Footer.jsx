@@ -11,9 +11,8 @@ export function Footer() {
           <div className="CTASec w-full flex flex-col justify-center items-start gap-[40px]">
             <div className="content flex justify-between w-full ">
               <p className="font-medium text-[48px] leading-[1.2em] tracking-[-0.05em]  bg-gradient-to-r from-white via-white to-neutral-800 bg-clip-text text-transparent">
-                Curious about what we can create together?
-                <br />
-                Let’s bring something extraordinary to life!
+                Exploring what we can build in Web3? <br />
+                Let’s turn an idea into something real and onchain.
               </p>
             </div>
             <div className="CTA flex justify-start items-center gap-[40px]">
@@ -34,17 +33,17 @@ export function Footer() {
           <div className="FooteDetials text-white w-full flex justify-between">
             <div className="info flex justify-start gap-[170px] items-center">
               <p className="font-normal text-[16px] leading-[1.6em]">
-                +81 (0)90 1234 5678 <br /> hello@yuya.com
+                +91 8791935630 <br /> devrikhjatav.official@gmail.com
               </p>
               <p className="font-normal text-[16px] leading-[1.6em]">
-                Designed & Developed <br />
-                by Peter Hodak
+                Design Inspired by <br />
+                Peter Hodak
               </p>
             </div>
             <p className="font-normal text-[16px] leading-[1.6em]">
               All rights reserved,
               <br />
-              YUYA ©2024
+              DEJA ©2024
             </p>
           </div>
         </div>

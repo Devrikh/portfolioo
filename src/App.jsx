@@ -7,17 +7,8 @@ import { About } from "./components/About";
 import { Footer } from "./components/Footer";
 import { Hero } from "./components/Hero";
 import { Navbar } from "./components/Navbar";
-import { Work } from "./components/Work";
-
-
-
-
-
-
-
-
-
-
+import{ Work} from "./components/Work"
+import { Skills } from "./components/Skills";
 
 
 
@@ -49,7 +40,7 @@ const { scrollYProgress } = useScroll();
 const siteY = useTransform(
   scrollYProgress,
   [0.10, 1], // start reveal later
-  ["0%", "-60%"] // move slower and more linear
+  ["0%", "-30%"] // move slower and more linear
 );
 
   return (
@@ -72,6 +63,8 @@ const siteY = useTransform(
           <Hero />
           <div className="h-[1px] bg-[#F5F5F5]"></div>
           <Work />
+          <div className="h-[1px] bg-[#F5F5F5]"></div>
+          <Skills />
           <div className="h-[1px] bg-[#F5F5F5]"></div>
           <About />
         </div>

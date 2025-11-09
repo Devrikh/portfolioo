@@ -11,6 +11,7 @@ export function Navbar() {
               <p>Works</p>
               <p>About</p>
               <p>Contact</p>
+              
               <div>
                 <svg
                   width="18"

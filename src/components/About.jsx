@@ -11,15 +11,16 @@ export function About(){
             </div>
             <div className="textSection w-full flex justify-between  ">
               <p className="max-w-[728px] text-justify text-[50px] font-medium leading-[1.1em] tracking-[-0.03em]">
-                I collaborate with businesses of all sizes worldwide, using the
-                latest technologies. My designs have also earned multiple
-                awards.
+                I’m a final-year Computer Science student at IIITV, looking
+                for opportunities to work on meaningful projects and grow.
               </p>
             </div>
             <div className="imageSelect flex justify-center items-center gap-[76px] pl-[100px] w-full">
               <div className="img bg-amber-200 w-[553px] h-[400px]"></div>
               <p className="[passage max-w-[311px] text-justify text-[20px] font-medium leading-[1.2em] tracking-[-0.04em] ">
-                    I’m dedicated to crafting beautiful and highly functional designs that seamlessly align with my clients' unique needs and long-term goals.
+                I care about clarity in systems, consistency in design, and
+                writing code that simply does its job. I don’t just explore
+                ideas, I build them, ship them, and make sure they hold up.{" "}
               </p>
             </div>
           </div>

@@ -29,8 +29,9 @@ export function Hero() {
             </div>
           </div>
           <div className="hello indent-[2.1em] text-[40px] font-medium  max-w-[643px] leading-[1.1em] tracking-[-0.05em] text-justify">
-            Hello, I'm a freelancer specializing in minimal design with 10 years
-            of expertise — based in Tokyo, working remote. Let’s create!
+            I’m a developer crafting modern web applications and decentralized
+            systems — blending smart contracts, strong architecture, and clean
+            full-stack builds.
           </div>
         </div>
       </div>
