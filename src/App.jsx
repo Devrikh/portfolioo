@@ -9,6 +9,7 @@ import { Hero } from "./components/Hero";
 import { Navbar } from "./components/Navbar";
 import{ Work} from "./components/Work"
 import { Skills } from "./components/Skills";
+import { Experience } from "./components/Experience";
 
 
 
@@ -18,19 +19,118 @@ function App() {
 
 
 
-  
-  useEffect(() => {
-    const cursor = document.getElementById("cursor");
-    if (!cursor) return;
+useEffect(() => {
+  const emailElement = document.getElementById("email");
+  const cursor = document.getElementById("cursor");
 
-    const move = (e) => {
-      cursor.style.left = e.clientX + "px";
-      cursor.style.top = e.clientY + "px";
+  if (!emailElement) return;
+
+  const handleCopy = () => {
+    const email = "devrikhjatav.official@gmail.com";
+    navigator.clipboard.writeText(email);
+
+    if (cursor) {
+      cursor.innerText = "Copied!";
+      cursor.classList.add("cursor-copy");
+    }
+  };
+
+  emailElement.addEventListener("click", handleCopy);
+
+  return () => {
+    emailElement.removeEventListener("click", handleCopy);
+  };
+}, []);
+
+
+
+  
+useEffect(() => {
+  const cursor = document.getElementById("cursor");
+  if (!cursor) return;
+
+  const move = (e) => {
+    cursor.style.left = (e.clientX-8) + "px";
+    cursor.style.top = (e.clientY-4) + "px";
+  };
+
+  window.addEventListener("mousemove", move);
+
+
+
+
+
+  const targets = document.querySelectorAll(".cursor-grow");
+
+  targets.forEach((t) => {
+    t.addEventListener("mouseenter", () => cursor.classList.add("grow"));
+    t.addEventListener("mouseleave", () => cursor.classList.remove("grow"));
+  });
+
+
+
+
+
+
+   const down = () => cursor.classList.add("cursor-shrink");
+   const up = () => cursor.classList.remove("cursor-shrink");
+
+   window.addEventListener("mousedown", down);
+   window.addEventListener("mouseup", up);
+   
+
+
+
+
+    const copyTargets = document.querySelectorAll(".cursor-copy-target");
+
+    const copyEnter = () => {
+      cursor.classList.add("cursor-copy");
+      cursor.innerText = "Copy";
     };
 
-    window.addEventListener("mousemove", move);
-    return () => window.removeEventListener("mousemove", move);
-  }, []);
+    const copyLeave = () => {
+      cursor.classList.remove("cursor-copy");
+      cursor.innerText = "";
+    };
+
+    copyTargets.forEach((t) => {
+      t.addEventListener("mouseenter", copyEnter);
+      t.addEventListener("mouseleave", copyLeave);
+    });
+
+
+
+    const handleCopyClick = () => {
+      navigator.clipboard.writeText("devrikhjatav.official@gmail.com");
+
+      // show "Copied"
+      cursor.innerText = "Copied";
+      cursor.classList.add("cursor-copy");
+
+    };
+
+
+    copyTargets.forEach((t) => {
+      t.addEventListener("click", handleCopyClick);
+    });
+
+
+
+
+
+
+  return () => {
+    window.removeEventListener("mousemove", move);
+    targets.forEach((t) => {
+      t.removeEventListener("mouseenter", () => cursor.classList.add("grow"));
+      t.removeEventListener("mouseleave", () =>
+        cursor.classList.remove("grow")
+      );
+    });
+  };
+}, []);
+
 
 
 
@@ -64,9 +164,11 @@ const siteY = useTransform(
           <div className="h-[1px] bg-[#F5F5F5]"></div>
           <Work />
           <div className="h-[1px] bg-[#F5F5F5]"></div>
+          <About />
+          <div className="h-[1px] bg-[#F5F5F5]"></div>
           <Skills />
           <div className="h-[1px] bg-[#F5F5F5]"></div>
-          <About />
+          <Experience />
         </div>
       </motion.div>
       <div className="fixed bottom-0 left-0 w-full z-0">

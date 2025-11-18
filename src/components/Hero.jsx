@@ -15,14 +15,17 @@ export function Hero() {
           </div>
           <div className="image">
             <img
-              src=""
+              src="/images/profile.jpeg"
               alt=""
-              className="h-[168px] w-[168px] bg-amber-400 rounded-[140px]"
+              className="h-[168px] w-[168px] rounded-[140px]"
             />
           </div>
         </div>
         <div className="bio w-full flex justify-between h-[176px]">
-          <div className="mail flex font-medium text-[26px]">
+          <div
+            id="email"
+            className="mail flex font-medium text-[26px] cursor-copy-target"
+          >
             devrikhjatav.official@gmail.com
             <div className="h-[20px] mt-2 ml-2.5">
               <LuCopy className="transform scale-x-[-1] scale-y-[-1] h-[20px] w-[20px]" />
