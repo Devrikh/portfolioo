@@ -1,5 +1,5 @@
 import { WorkCard } from "./WorkCard";
-import { experience, projects } from "./workcontent";
+import { experience, projects } from "./workContent";
 
 export function Work(){
     return (
