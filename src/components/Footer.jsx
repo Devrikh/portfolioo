@@ -51,7 +51,7 @@ export function Footer() {
           <div className="FooteDetials text-white w-full flex justify-between">
             <div className="info flex justify-start gap-[170px] items-center">
               <p className="font-normal text-[16px] leading-[1.6em]">
-                +91 8791935630 <br /> devrikhjatav.official@gmail.com
+                devrikhjatav.official@gmail.com
               </p>
               <p className="font-normal text-[16px] leading-[1.6em]">
                 Design Inspired by <br />
