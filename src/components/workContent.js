@@ -1,5 +1,17 @@
 export const projects = [
   {
+    title: "Tenovate: Multi-Tenant SaaS Backend",
+    tech: ["TypeScript", "Express.js", "PostgreSQL", "Prisma", "Swagger"],
+    date: "Jan 2026 – Feb 2025",
+    src: "/images/tenovate.jpg",
+    bullets: [
+      "Built a multi-tenant SaaS backend infrastructure supporting organization-based tenant isolation within a single application instance.",
+      "Implemented database-driven RBAC and middleware-based authorization for organizations, members, and projects.",
+      "item Designed modular REST APIs for authentication, team invitations, feature gating, and usage tracking; documented with Swagger (OpenAPI).",
+    ],
+    link: "https://github.com/Devrikh/Tenovate",
+  },
+  {
     title: "Blockchain-Based 5G Video Streaming",
     tech: ["React.js", "IPFS (Pinata)", "Docker", "Hardhat"],
     date: "Feb 2025 – Apr 2025",
@@ -23,18 +35,6 @@ export const projects = [
       "Optimized gas fees and accelerated contract execution by 30.",
     ],
     link: "https://github.com/Devrikh/FishChain.git",
-  },
-  {
-    title: "Toddler Autism Prediction App",
-    tech: ["Machine Learning", "Flask", "HTML", "CSS"],
-    date: "Aug 2024 – Dec 2024",
-    src: "/images/toddler.jpg",
-    bullets: [
-      "Built a Naive Bayes-based ML model achieving 85% accuracy in identifying autism risk.",
-      "Processed over 1,500 screening records with optimized preprocessing pipelines.",
-      "Improved data processing efficiency by 30 using NumPy and Pandas.",
-    ],
-    link: "https://github.com/Devrikh/Toddler_Autism_Prediction.git",
   },
 ];
 

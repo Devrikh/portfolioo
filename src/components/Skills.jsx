@@ -1,8 +1,5 @@
 import {
-  SiSolidity,
-  SiEthers,
-  SiWeb3Dotjs,
-  SiIpfs,
+  SiNextdotjs,
   SiReact,
   SiNodedotjs,
   SiExpress,
@@ -11,19 +8,17 @@ import {
   SiJavascript,
   SiTypescript,
   SiCplusplus,
-  SiC,
+  SiSocketdotio,
   SiPython,
   SiGit,
   SiDocker,
-  SiPostman,
+  SiPostgresql,
   SiFigma,
-  SiMysql,
-  SiBootstrap,
-  SiFlask
+  SiPrisma,
+  SiGithub,
+  SiTurborepo,
 } from "react-icons/si";
 
-import { GiMiningHelmet } from "react-icons/gi";
-import { FaFlask, FaHardHat } from "react-icons/fa";
 
 
 
@@ -39,24 +34,45 @@ export function Skills() {
           </div>
         </div>
 
-        {/* Rows */}
-
-        {/* Fullstack */}
+        {/* Backend */}
         <SkillRow
-          title="Fullstack"
+          title="Backend"
           icons={[
-            { Icon: SiReact, color: "#61dafb", label: "React.js" },
             { Icon: SiNodedotjs, color: "#3c873a", label: "Node.js" },
             { Icon: SiExpress, color: "#000000", label: "Express.js" },
-            { Icon: SiMongodb, color: "#4db33d", label: "MongoDB" },
-            { Icon: SiMysql, color: "#00758f", label: "MySQL" },
+            { Icon: SiSocketdotio, color: "#010101", label: "WebSockets" },
+          ]}
+        />
+
+        {/* Frontend */}
+        <SkillRow
+          title="Frontend"
+          icons={[
+            { Icon: SiReact, color: "#61dafb", label: "React.js" },
+            { Icon: SiNextdotjs, color: "#000000", label: "Next.js" },
             { Icon: SiTailwindcss, color: "#38bdf8", label: "Tailwind CSS" },
-            { Icon: SiBootstrap, color: "#7952b3", label: "Bootstrap 5" },
-            { Icon: SiFlask, color: "#000000", label: "Flask" },
-            { Icon: SiGit, color: "#f34f29", label: "Git" },
-            { Icon: SiDocker, color: "#2496ed", label: "Docker" },
-            { Icon: SiPostman, color: "#ef5b25", label: "Postman" },
             { Icon: SiFigma, color: "#a259ff", label: "Figma" },
+          ]}
+        />
+
+        {/* Databases */}
+        <SkillRow
+          title="Databases & ORM"
+          icons={[
+            { Icon: SiPostgresql, color: "#336791", label: "PostgreSQL" },
+            { Icon: SiMongodb, color: "#4db33d", label: "MongoDB" },
+            { Icon: SiPrisma, color: "#2d3748", label: "Prisma" },
+          ]}
+        />
+
+        {/* Tools */}
+        <SkillRow
+          title="Tools & DevOps"
+          icons={[
+            { Icon: SiGit, color: "#f34f29", label: "Git" },
+            { Icon: SiGithub, color: "#000000", label: "GitHub" },
+            { Icon: SiDocker, color: "#2496ed", label: "Docker" },
+            { Icon: SiTurborepo, color: "#ef4444", label: "Turborepo" },
           ]}
         />
 
@@ -67,7 +83,6 @@ export function Skills() {
             { Icon: SiJavascript, color: "#f7df1e", label: "JavaScript" },
             { Icon: SiTypescript, color: "#3178c6", label: "TypeScript" },
             { Icon: SiCplusplus, color: "#00599c", label: "C++" },
-            { Icon: SiC, color: "#283593", label: "C" },
             { Icon: SiPython, color: "#3776ab", label: "Python" },
           ]}
         />

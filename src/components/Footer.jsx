@@ -33,7 +33,7 @@ export function Footer() {
             </div>
             <div className="CTA flex justify-start items-center gap-[40px]">
               <a
-                href="https://drive.google.com/file/d/1mQEByzrE2u07uiX3PJrcxKAW4if_Risx/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1me9orDnj4MFHukQA58f0py1twJNnbpZ-/view?usp=sharing"
                 className="btn cursor-grow bg-[#F5F5F5] transition-colors duration-300 hover:bg-white/20 hover:text-white flex justify-center items-center gap-10 font-medium text-[16px] px-[36px] py-[20px] leading-[1.2em] tracking-[-0.04em] text-justify"
               >
                 Resume
