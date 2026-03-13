@@ -32,9 +32,7 @@ export function Hero() {
             </div>
           </div>
           <div className="hello indent-[2.1em] text-[40px] font-medium  max-w-[643px] leading-[1.1em] tracking-[-0.05em] text-justify">
-            I’m a developer crafting modern web applications and decentralized
-            systems — blending smart contracts, strong architecture, and clean
-            full-stack builds.
+            I’m a developer building modern web applications and scalable backend systems, focusing on clean architecture, reliable APIs, and production-ready full-stack solutions.
           </div>
         </div>
       </div>

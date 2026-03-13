@@ -16,7 +16,7 @@ export function About() {
           </div>
           <div className="textSection w-full flex justify-between  ">
             <p className="max-w-[728px] text-justify text-[50px] font-medium leading-[1.1em] tracking-[-0.03em]">
-              I’m a final-year Computer Science student at IIITV, looking for
+              I’m a final year Computer Science student at IIITV, looking for
               opportunities to work on meaningful projects and grow.
             </p>
           </div>
@@ -36,9 +36,7 @@ export function About() {
               />
             </div>
             <p className="[passage max-w-[311px] text-justify text-[20px] font-medium leading-[1.2em] tracking-[-0.04em] ">
-              I care about clarity in systems, consistency in design, and
-              writing code that simply does its job. I don’t just explore ideas,
-              I build them, ship them, and make sure they hold up.{" "}
+              I care about clarity in system design, consistency in implementation, and writing software that does exactly what it’s meant to do. I don’t just experiment with ideas. I build them, ship them, and make sure they hold up.{" "}
             </p>
           </div>
         </div>

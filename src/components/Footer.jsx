@@ -26,8 +26,9 @@ export function Footer() {
           <div className="CTASec w-full flex flex-col justify-center items-start gap-[40px]">
             <div className="content flex justify-between w-full ">
               <p className="font-medium text-[48px] leading-[1.2em] tracking-[-0.05em]  bg-gradient-to-r from-white via-white to-neutral-800 bg-clip-text text-transparent">
-                Exploring what we can build in Web3? <br />
-                Let’s turn an idea into something real and onchain.
+                Have an idea for a product or platform?
+                <br />
+                Let’s turn it into something real.
               </p>
             </div>
             <div className="CTA flex justify-start items-center gap-[40px]">

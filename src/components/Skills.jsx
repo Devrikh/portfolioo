@@ -40,17 +40,6 @@ export function Skills() {
         </div>
 
         {/* Rows */}
-        {/* Web3 */}
-        <SkillRow
-          title="Web3"
-          icons={[
-            { Icon: SiSolidity, color: "#363636", label: "Solidity" },
-            { Icon: FaHardHat, color: "#f7c52e", label: "Hardhat" },
-            { Icon: SiEthers, color: "#4c69ff", label: "Ethers.js" },
-            { Icon: SiWeb3Dotjs, color: "#f16822", label: "Web3.js" },
-            { Icon: SiIpfs, color: "#56c2a5", label: "IPFS" },
-          ]}
-        />
 
         {/* Fullstack */}
         <SkillRow
