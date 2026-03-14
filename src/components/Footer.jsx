@@ -5,7 +5,7 @@ export function Footer() {
         <div className="h-[100vh] max-w-[1600px]  w-full flex flex-col justify-between items-center py-[60px]">
           <div className="socials w-full text-white flex justify-end items-center gap-[26px]">
             <a
-              href="https://www.linkedin.com/in/devrikh-jatav-6bb512256/"
+              href="https://www.linkedin.com/in/devrikhjatav/"
               className="font-medium text-[16px] text-justify cursor-grow"
             >
               Linkedin
@@ -33,7 +33,7 @@ export function Footer() {
             </div>
             <div className="CTA flex justify-start items-center gap-[40px]">
               <a
-                href="https://drive.google.com/file/d/1me9orDnj4MFHukQA58f0py1twJNnbpZ-/view?usp=sharing"
+                href="https://drive.google.com/drive/folders/1d89hD-u_kOMuHVbGOGJqigxB_5apmUuO?usp=sharing"
                 className="btn cursor-grow bg-[#F5F5F5] transition-colors duration-300 hover:bg-white/20 hover:text-white flex justify-center items-center gap-10 font-medium text-[16px] px-[36px] py-[20px] leading-[1.2em] tracking-[-0.04em] text-justify"
               >
                 Resume

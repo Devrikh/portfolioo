@@ -56,7 +56,7 @@ export function Navbar() {
                     About
                   </p>
                   <a
-                    href="https://drive.google.com/file/d/1me9orDnj4MFHukQA58f0py1twJNnbpZ-/view?usp=sharing"
+                    href="https://drive.google.com/drive/folders/1d89hD-u_kOMuHVbGOGJqigxB_5apmUuO?usp=sharing"
                     className="hover:text-black/40 transition-colors duration-300"
                   >
                     Resume
