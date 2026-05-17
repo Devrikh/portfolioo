@@ -2,39 +2,40 @@ export function Footer() {
   return (
     <>
       <div className="w-full px-[80px] flex flex-col justify-center items-center bg-black">
-        <div className="h-[100vh] max-w-[1600px]  w-full flex flex-col justify-between items-center py-[60px]">
+        <div className="h-[100vh] max-w-[1600px] w-full flex flex-col justify-between items-center py-[60px]">
           <div className="socials w-full text-white flex justify-end items-center gap-[26px]">
             <a
               href="https://www.linkedin.com/in/devrikhjatav/"
-              className="font-medium text-[16px] text-justify cursor-grow"
+              className="font-medium text-[16px] cursor-grow"
             >
-              Linkedin
-            </a>
-            <a
-              href="https://x.com/Devrikh_jatav"
-              className="font-medium text-[16px] text-justify cursor-grow"
-            >
-              Twitter
+              LinkedIn
             </a>
             <a
               href="https://github.com/Devrikh"
-              className="font-medium text-[16px] text-justify cursor-grow"
+              className="font-medium text-[16px] cursor-grow"
             >
-              Github
+              GitHub
+            </a>
+            <a
+              href="https://x.com/Devrikh_jatav"
+              className="font-medium text-[16px] cursor-grow"
+            >
+              Twitter
             </a>
           </div>
+
           <div className="CTASec w-full flex flex-col justify-center items-start gap-[40px]">
-            <div className="content flex justify-between w-full ">
-              <p className="font-medium text-[48px] leading-[1.2em] tracking-[-0.05em]  bg-gradient-to-r from-white via-white to-neutral-800 bg-clip-text text-transparent">
-                Have an idea for a product or platform?
+            <div className="content flex justify-between w-full">
+              <p className="font-medium text-[48px] leading-[1.2em] tracking-[-0.05em] bg-gradient-to-r from-white via-white to-neutral-800 bg-clip-text text-transparent">
+                Need a backend that actually holds up?
                 <br />
-                Let’s turn it into something real.
+                Let's build something worth shipping.
               </p>
             </div>
             <div className="CTA flex justify-start items-center gap-[40px]">
               <a
                 href="https://drive.google.com/drive/folders/1d89hD-u_kOMuHVbGOGJqigxB_5apmUuO?usp=sharing"
-                className="btn cursor-grow bg-[#F5F5F5] transition-colors duration-300 hover:bg-white/20 hover:text-white flex justify-center items-center gap-10 font-medium text-[16px] px-[36px] py-[20px] leading-[1.2em] tracking-[-0.04em] text-justify"
+                className="btn cursor-grow bg-[#F5F5F5] transition-colors duration-300 hover:bg-white/20 hover:text-white flex justify-center items-center gap-10 font-medium text-[16px] px-[36px] py-[20px] leading-[1.2em] tracking-[-0.04em]"
               >
                 Resume
               </a>
@@ -49,7 +50,8 @@ export function Footer() {
               </div>
             </div>
           </div>
-          <div className="FooteDetials text-white w-full flex justify-between">
+
+          <div className="FooterDetails text-white w-full flex justify-between">
             <div className="info flex justify-start gap-[170px] items-center">
               <p className="font-normal text-[16px] leading-[1.6em]">
                 devrikhjatav.official@gmail.com
@@ -62,7 +64,7 @@ export function Footer() {
             <p className="font-normal text-[16px] leading-[1.6em]">
               All rights reserved,
               <br />
-              DEJA ©2024
+              Devrikh Jatav ©2026
             </p>
           </div>
         </div>

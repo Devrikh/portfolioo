@@ -16,11 +16,9 @@ import {
   SiFigma,
   SiPrisma,
   SiGithub,
-  SiTurborepo,
+  SiRedis,
+  SiJest,
 } from "react-icons/si";
-
-
-
 
 export function Skills() {
   return (
@@ -34,6 +32,17 @@ export function Skills() {
           </div>
         </div>
 
+        {/* Languages */}
+        <SkillRow
+          title="Languages"
+          icons={[
+            { Icon: SiTypescript, color: "#3178c6", label: "TypeScript" },
+            { Icon: SiJavascript, color: "#f7df1e", label: "JavaScript" },
+            { Icon: SiPython, color: "#3776ab", label: "Python" },
+            { Icon: SiCplusplus, color: "#00599c", label: "C/C++" },
+          ]}
+        />
+
         {/* Backend */}
         <SkillRow
           title="Backend"
@@ -41,17 +50,7 @@ export function Skills() {
             { Icon: SiNodedotjs, color: "#3c873a", label: "Node.js" },
             { Icon: SiExpress, color: "#000000", label: "Express.js" },
             { Icon: SiSocketdotio, color: "#010101", label: "WebSockets" },
-          ]}
-        />
-
-        {/* Frontend */}
-        <SkillRow
-          title="Frontend"
-          icons={[
-            { Icon: SiReact, color: "#61dafb", label: "React.js" },
-            { Icon: SiNextdotjs, color: "#000000", label: "Next.js" },
-            { Icon: SiTailwindcss, color: "#38bdf8", label: "Tailwind CSS" },
-            { Icon: SiFigma, color: "#a259ff", label: "Figma" },
+            { Icon: SiRedis, color: "#dc382d", label: "Redis / BullMQ" },
           ]}
         />
 
@@ -65,25 +64,25 @@ export function Skills() {
           ]}
         />
 
-        {/* Tools */}
+        {/* Testing & DevOps */}
         <SkillRow
-          title="Tools & DevOps"
+          title="Testing & DevOps"
           icons={[
-            { Icon: SiGit, color: "#f34f29", label: "Git" },
-            { Icon: SiGithub, color: "#000000", label: "GitHub" },
+            { Icon: SiJest, color: "#c21325", label: "Jest" },
             { Icon: SiDocker, color: "#2496ed", label: "Docker" },
-            { Icon: SiTurborepo, color: "#ef4444", label: "Turborepo" },
+            { Icon: SiGit, color: "#f34f29", label: "Git" },
+            { Icon: SiGithub, color: "#000000", label: "GitHub Actions" },
           ]}
         />
 
-        {/* Languages */}
+        {/* Frontend */}
         <SkillRow
-          title="Languages"
+          title="Frontend"
           icons={[
-            { Icon: SiJavascript, color: "#f7df1e", label: "JavaScript" },
-            { Icon: SiTypescript, color: "#3178c6", label: "TypeScript" },
-            { Icon: SiCplusplus, color: "#00599c", label: "C++" },
-            { Icon: SiPython, color: "#3776ab", label: "Python" },
+            { Icon: SiReact, color: "#61dafb", label: "React.js" },
+            { Icon: SiNextdotjs, color: "#000000", label: "Next.js" },
+            { Icon: SiTailwindcss, color: "#38bdf8", label: "Tailwind CSS" },
+            { Icon: SiFigma, color: "#a259ff", label: "Figma" },
           ]}
         />
       </div>
@@ -94,40 +93,25 @@ export function Skills() {
 function SkillRow({ title, icons }) {
   return (
     <div className="flex items-center gap-[40px]">
-      {/* Section title */}
-      <p className="w-[150px] font-medium text-[20px]">{title}</p>
-
-      {/* Icons */}
+      <p className="w-[160px] font-medium text-[20px] flex-shrink-0">{title}</p>
       <div className="flex flex-row items-center gap-6">
         {icons.map(({ Icon, color, label }, i) => (
           <div
             key={i}
             className="relative group flex items-center justify-center"
           >
-            {/* The icon */}
             <Icon
               size={40}
               color={color}
-              className="
-                skill-icon
-                transition-all duration-300 ease-out
-                hover:scale-[1.2]
-                hover:-translate-y-[2px]
-                hover:rotate-[1deg]
-                cursor-none
-              "
+              className="skill-icon transition-all duration-300 ease-out hover:scale-[1.2] hover:-translate-y-[2px] hover:rotate-[1deg] cursor-none"
             />
-
-            {/* Tooltip */}
             <div
-              className="
-                absolute bottom-[50px] left-1/2 -translate-x-1/2
+              className="absolute bottom-[50px] left-1/2 -translate-x-1/2
                 opacity-0 group-hover:opacity-100
                 translate-y-1 group-hover:translate-y-0
                 transition-all duration-200 ease-out
                 bg-black text-white text-[12px]
-                px-2 py-1  whitespace-nowrap
-              "
+                px-2 py-1 whitespace-nowrap"
             >
               {label}
             </div>
