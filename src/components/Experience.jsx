@@ -6,6 +6,11 @@ export function Experience() {
       date: "May 2025 – Jul 2025",
     },
     {
+    role: "Research Intern",
+    org: "IIITV",
+    date: "Dec 2025 – May 2026",
+  },
+    {
       role: "Founding Member",
       org: "Droid Robotics Club — IIITV",
       date: "Sep 2023 – Jul 2025",
