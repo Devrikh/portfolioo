@@ -24,7 +24,7 @@ export function Hero() {
             {/* Role pill */}
             <div className="flex flex-col items-end gap-[6px]">
               <span className="text-[13px] font-medium bg-[#F5F5F5] px-[14px] py-[6px] text-black">
-                Backend Engineer
+                Software Engineer
               </span>
               <span className="text-[13px] text-gray-400 font-medium">
                 B.Tech CSE · IIIT Vadodara · 2026
@@ -44,8 +44,8 @@ export function Hero() {
             </div>
           </div>
           <div className="hello indent-[2.1em] text-[40px] font-medium max-w-[643px] leading-[1.1em] tracking-[-0.05em] text-justify">
-            Backend engineer. I build distributed job queues, multi-tenant SaaS
-            infrastructure, and battle-tested REST APIs. Open to Backend / SDE
+            Software engineer. I build distributed job queues, multi-tenant SaaS
+            infrastructure, and battle-tested REST APIs. Open to SDE
             roles.
           </div>
         </div>

@@ -27,7 +27,7 @@ export function Footer() {
           <div className="CTASec w-full flex flex-col justify-center items-start gap-[40px]">
             <div className="content flex justify-between w-full">
               <p className="font-medium text-[48px] leading-[1.2em] tracking-[-0.05em] bg-gradient-to-r from-white via-white to-neutral-800 bg-clip-text text-transparent">
-                Need a backend that actually holds up?
+                Looking to build something that actually scales?
                 <br />
                 Let's build something worth shipping.
               </p>
