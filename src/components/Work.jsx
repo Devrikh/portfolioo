@@ -24,6 +24,8 @@ export function Work() {
               href={p.link}
               tech={p.tech}
               bullets={p.bullets}
+              github={p.github}
+              live={p.live}
             />
           ))}
         </div>

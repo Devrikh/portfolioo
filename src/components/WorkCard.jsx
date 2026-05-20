@@ -7,6 +7,8 @@ export function WorkCard({
   href,
   tech = [],
   bullets = [],
+  github = null,
+  live = null,
 }) {
   const [expanded, setExpanded] = useState(false);
 
@@ -43,24 +45,40 @@ export function WorkCard({
         </div>
       </a>
 
-      {/* Info area — always visible below the image */}
+      {/* Info area */}
       <div className="border border-[#EAEAEA] p-[32px] flex flex-col gap-[20px]">
-        {/* Header row */}
-        <div className="flex justify-between items-start">
+        {/* Title + buttons */}
+        <div className="flex justify-between items-start gap-4">
           <div>
             <p className="font-medium text-[22px] tracking-tight">{title}</p>
             <p className="text-gray-500 text-[15px] mt-[2px]">{subtitle}</p>
           </div>
-          <a
-            href={href}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[13px] font-medium border border-[#EAEAEA] px-[16px] py-[8px]
-                       hover:bg-black hover:text-white hover:border-black
-                       transition-all duration-200 cursor-grow whitespace-nowrap"
-          >
-            View Project ↗
-          </a>
+          <div className="flex items-center gap-[8px] flex-shrink-0">
+            {github && (
+              <a
+                href={github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[13px] font-medium border border-[#EAEAEA] px-[16px] py-[8px]
+                           hover:bg-black hover:text-white hover:border-black
+                           transition-all duration-200 cursor-grow whitespace-nowrap"
+              >
+                GitHub ↗
+              </a>
+            )}
+            {live && (
+              <a
+                href={live}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[13px] font-medium border border-[#EAEAEA] px-[16px] py-[8px]
+                           hover:bg-black hover:text-white hover:border-black
+                           transition-all duration-200 cursor-grow whitespace-nowrap"
+              >
+                Live ↗
+              </a>
+            )}
+          </div>
         </div>
 
         {/* Tech badges */}
@@ -93,7 +111,6 @@ export function WorkCard({
               {expanded ? "Hide details" : "What I built"}
             </button>
 
-            {/* Bullets — animated expand */}
             <div
               className={`overflow-hidden transition-all duration-500 ease-in-out ${
                 expanded ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"

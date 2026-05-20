@@ -20,11 +20,51 @@ import {
   SiJest,
 } from "react-icons/si";
 
+const rows = [
+  {
+    title: "Languages",
+    icons: [
+      { Icon: SiTypescript, color: "#3178c6", label: "TypeScript" },
+      { Icon: SiJavascript, color: "#f7df1e", label: "JavaScript" },
+      { Icon: SiPython, color: "#3776ab", label: "Python" },
+      { Icon: SiCplusplus, color: "#00599c", label: "C/C++" },
+    ],
+  },
+  {
+    title: "Frameworks & Libraries",
+    icons: [
+      { Icon: SiNodedotjs, color: "#3c873a", label: "Node.js" },
+      { Icon: SiExpress, color: "#000000", label: "Express.js" },
+      { Icon: SiSocketdotio, color: "#010101", label: "WebSockets" },
+      { Icon: SiRedis, color: "#dc382d", label: "Redis / BullMQ" },
+      { Icon: SiReact, color: "#61dafb", label: "React.js" },
+      { Icon: SiNextdotjs, color: "#000000", label: "Next.js" },
+      { Icon: SiTailwindcss, color: "#38bdf8", label: "Tailwind CSS" },
+    ],
+  },
+  {
+    title: "Databases & ORM",
+    icons: [
+      { Icon: SiPostgresql, color: "#336791", label: "PostgreSQL" },
+      { Icon: SiMongodb, color: "#4db33d", label: "MongoDB" },
+      { Icon: SiPrisma, color: "#2d3748", label: "Prisma" },
+    ],
+  },
+  {
+    title: "Testing & DevOps",
+    icons: [
+      { Icon: SiJest, color: "#c21325", label: "Jest" },
+      { Icon: SiDocker, color: "#2496ed", label: "Docker" },
+      { Icon: SiGit, color: "#f34f29", label: "Git" },
+      { Icon: SiGithub, color: "#000000", label: "GitHub Actions" },
+    ],
+  },
+];
+
 export function Skills() {
   return (
     <div className="w-full px-[80px] pt-[80px] pb-[160px] flex flex-col items-center">
       <div className="max-w-[1600px] w-full flex flex-col gap-[60px]">
-        {/* Header */}
         <div className="flex justify-between items-center">
           <p className="font-medium text-[30px]">skills.</p>
           <div className="bg-[#F5F5F5] px-[36px] py-[20px] font-medium text-[16px]">
@@ -32,59 +72,9 @@ export function Skills() {
           </div>
         </div>
 
-        {/* Languages */}
-        <SkillRow
-          title="Languages"
-          icons={[
-            { Icon: SiTypescript, color: "#3178c6", label: "TypeScript" },
-            { Icon: SiJavascript, color: "#f7df1e", label: "JavaScript" },
-            { Icon: SiPython, color: "#3776ab", label: "Python" },
-            { Icon: SiCplusplus, color: "#00599c", label: "C/C++" },
-          ]}
-        />
-
-        {/* Backend */}
-        <SkillRow
-          title="Backend"
-          icons={[
-            { Icon: SiNodedotjs, color: "#3c873a", label: "Node.js" },
-            { Icon: SiExpress, color: "#000000", label: "Express.js" },
-            { Icon: SiSocketdotio, color: "#010101", label: "WebSockets" },
-            { Icon: SiRedis, color: "#dc382d", label: "Redis / BullMQ" },
-          ]}
-        />
-
-        {/* Databases */}
-        <SkillRow
-          title="Databases & ORM"
-          icons={[
-            { Icon: SiPostgresql, color: "#336791", label: "PostgreSQL" },
-            { Icon: SiMongodb, color: "#4db33d", label: "MongoDB" },
-            { Icon: SiPrisma, color: "#2d3748", label: "Prisma" },
-          ]}
-        />
-
-        {/* Testing & DevOps */}
-        <SkillRow
-          title="Testing & DevOps"
-          icons={[
-            { Icon: SiJest, color: "#c21325", label: "Jest" },
-            { Icon: SiDocker, color: "#2496ed", label: "Docker" },
-            { Icon: SiGit, color: "#f34f29", label: "Git" },
-            { Icon: SiGithub, color: "#000000", label: "GitHub Actions" },
-          ]}
-        />
-
-        {/* Frontend */}
-        <SkillRow
-          title="Frontend"
-          icons={[
-            { Icon: SiReact, color: "#61dafb", label: "React.js" },
-            { Icon: SiNextdotjs, color: "#000000", label: "Next.js" },
-            { Icon: SiTailwindcss, color: "#38bdf8", label: "Tailwind CSS" },
-            { Icon: SiFigma, color: "#a259ff", label: "Figma" },
-          ]}
-        />
+        {rows.map((row, i) => (
+          <SkillRow key={i} title={row.title} icons={row.icons} />
+        ))}
       </div>
     </div>
   );
@@ -93,8 +83,8 @@ export function Skills() {
 function SkillRow({ title, icons }) {
   return (
     <div className="flex items-center gap-[40px]">
-      <p className="w-[160px] font-medium text-[20px] flex-shrink-0">{title}</p>
-      <div className="flex flex-row items-center gap-6">
+      <p className="w-[200px] font-medium text-[20px] flex-shrink-0">{title}</p>
+      <div className="flex flex-row flex-wrap items-center gap-6">
         {icons.map(({ Icon, color, label }, i) => (
           <div
             key={i}
@@ -103,16 +93,9 @@ function SkillRow({ title, icons }) {
             <Icon
               size={40}
               color={color}
-              className="skill-icon transition-all duration-300 ease-out hover:scale-[1.2] hover:-translate-y-[2px] hover:rotate-[1deg] cursor-none"
+              className="transition-all duration-300 ease-out hover:scale-[1.2] hover:-translate-y-[2px] hover:rotate-[1deg] cursor-none"
             />
-            <div
-              className="absolute bottom-[50px] left-1/2 -translate-x-1/2
-                opacity-0 group-hover:opacity-100
-                translate-y-1 group-hover:translate-y-0
-                transition-all duration-200 ease-out
-                bg-black text-white text-[12px]
-                px-2 py-1 whitespace-nowrap"
-            >
+            <div className="absolute bottom-[50px] left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 translate-y-1 group-hover:translate-y-0 transition-all duration-200 ease-out bg-black text-white text-[12px] px-2 py-1 whitespace-nowrap">
               {label}
             </div>
           </div>
